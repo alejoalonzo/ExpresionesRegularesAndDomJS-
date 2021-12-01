@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Act uf3</title>
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <form class="col-5 pt-5">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Introduzca Email</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" onclick="comprobarEmail()" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br><br><br>
+    <div class="row justify-content-center mt-5">
+        <select id="selectorProvincia" onchange="cambiarSelector();" class="form-select form-select-lg mb-3 ml-2"
+            aria-label=".form-select-lg example">
+            <option id="seccionado1" value="noSelect" selected>Selector no seleccionado</option>
+            <option value="madrid">Madrid</option>
+            <option value="barca">Barcelona</option>
+            <option value="valencia">Valencia</option>
+        </select>
+
+        <select id="selectorCiudad" class="form-select form-select-sm ml-2" aria-label=".form-select-sm example">
+            <option id="seccionado2" value="noSelect" selected>Selector no seleccionado</option>
+            <option id="ciudad1" value="1">Madrid Capital</option>
+            <option id="ciudad2" value="2">Alcalá de Henares</option>
+            <option id="ciudad3" value="3">Alcorcón</option>
+        </select>
+        <button type="submit" onclick="comprobarPoblacion()" class="btn btn-primary ml-3">Submit</button>
+    </div>
+    <br><br><br>
+    <div class="row justify-content-center mt-5">
+        <button class="btn btn-primary justify-content-center ml-5" onclick="aumentartamano()" type="submit">Aumentar
+            tamaño</button>
+        <button class="btn btn-primary justify-content-center ml-5" onclick="disminuirtamano()" type="submit">Disminuir
+            tammaño</button>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <p id="parrafo1" class="col-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit aspernatur cupiditate
+            necessitatibus unde expedita enim quae eum itaque saepe corporis dolor nostrum, dolorem temporibus labore
+            sapiente voluptatem ab facere?
+        </p>
+    </div>
+    <br><br><br>
+
+    <div class="row justify-content-center mt-5">
+        <h4>Click en el parrafo para clonarlo -></h4>
+        <p id="clonarParrafo" class="col-5" onclick="clonar();">
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit aspernatur cupiditate
+            necessitatibus unde expedita enim quae eum itaque saepe corporis dolor nostrum, dolorem temporibus labore
+            sapiente voluptatem ab facere?
+        </p>
+    </div>
+    <br><br><br>
+
+    <div class="row justify-content-center mt-5">
+        <button class="btn btn-primary " onclick="vaciarUnirParrafos()" type="submit">Vaciar
+            parrafos y unirlos</button>
+    </div>
+    <div class=" justify-content-center">
+        <p style="text-align: center;" id="P1" class="col-5">
+            Parrafo 1
+        </p>
+        <p style="text-align: center;" id="P2" class="col-5">
+            Parrafo 2
+        </p>
+        <p style="text-align: center;" id="P3" class="col-5">
+            Parrafo 3
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
